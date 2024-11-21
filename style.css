@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+
+.logo {
+  margin-left: 100px;
+  height: 600px;
+  width: 400px;
+  position: relative;
+}
+
+.a {
+  color: aliceblue;
+  font-size: 70px;
+  font-family: cursive;
+  text-align: center;
+  border-radius: 20px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.img {
+  width: 250px;
+  margin-left: 100px;
+}
+
+.im {
+  width: 200px;
+}
+
+.search {
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.search1 {
+  border-radius: 20px;
+  width: 300px;
+  height: 40px;
+  font-size: 120%;
+}
+
+.but {
+  border-radius: 100px;
+  background-color: black;
+  color: azure;
+  width: 100px;
+  font-size: large;
+}
+
+.weather {
+  text-align: center;
+  font-size: 37px;
+  color: aquamarine;
+  margin-top: 40px;
+}
+
+.temp {
+  font-size: 57px;
+  font-family:cursive;
+  color: #f1f1f1;
+  margin-top: 10px;
+}
+
+.city {
+  font-size: 47px;
+  font-family:cursive;
+  color: white;
+  margin-top: 10px;
+}
+
+.out {
+  margin-left: 100px;
+  height: auto;
+  width: 500px;
+  background: #3f42ec;
+  position: relative;
+  animation: glowBorder 2s ease-in-out infinite alternate;
+  box-shadow: 0 5px 15px rgba(239, 233, 233, 0.2);
+  border-radius: 11%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+@keyframes glowBorder {
+  0% {
+      box-shadow: -10px 10px 90px rgba(106, 239, 228, 0.759);
+  }
+  50% {
+      box-shadow: 0 0 20px rgba(149, 227, 223, 0.7), 0 0 40px rgba(88, 151, 168, 0.5), 0 0 60px rgba(101, 174, 203, 0.701);
+  }
+  100% {
+      box-shadow: 0 0 20px rgba(224, 233, 235, 0.7), 0 0 40px rgba(13, 104, 107, 0.604), 0 0 60px rgba(80, 136, 143, 0.807);
+  }
+}
+
+/* Style for the time display */
+.time,.earthquakeRisk {
+  font-size: 20px;
+  font-family:cursive;
+  color: #d8d8d8;
+  margin-top: 20px;
+}
+
+/* Style for the weather description */
+.desc {
+  font-size: 22px;
+  font-family:cursive;
+  color: #f1f1f1;
+  margin-top: 10px;
+}
+
+/* Style for the humidity and wind speed */
+.humidity, .wind {
+  font-size: 18px;
+  font-family:cursive;
+  color: #d8d8d8;
+  margin-top: 10px;
+}
+
+/* Weather icon styling */
+.im {
+  margin-top: 20px;
+  width: 150px;
+  height: auto;
+}
